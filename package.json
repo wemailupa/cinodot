@@ -44,4 +44,5 @@
     "gh-pages": "^5.0.0",
     "url-loader": "^4.1.1"
   }
+  "build": "react-scripts build && cp build/index.html build/404.html"
 }
