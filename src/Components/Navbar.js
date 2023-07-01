@@ -19,7 +19,7 @@ const Navbar = () => {
             <a href="/CaPosts">Applications</a>
             <a href="/CePosts">Computer Engineering</a>
             <a href="/TcPosts">Theoretical Computer Science</a>
-            <a href="http://www.pabloogle.com">Portfolio</a>
+            <a href="https://wemailupa.github.io/ads/coupon.htm">Portfolio</a>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <FaTimes/>
             </button>
