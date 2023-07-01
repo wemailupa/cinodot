@@ -1,0 +1,326 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Roboto+Slab:wght@100&family=Titillium+Web:ital,wght@0,400;1,300;1,400&display=swap'); */
+
+ *{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+:root{
+    --mainColor: #29335C;
+    --mainColorLight: #97a1c6;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+
+}
+
+nav a {
+    
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 50px;
+
+}
+
+nav a:hover{
+    color: var(--secondaryColor);
+}
+
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+.searchBar {
+    margin: auto;
+}
+
+.lgImg{
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    width: 15%;
+    
+}
+
+.posts-container{
+
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap:10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: white;
+    padding: 5%;
+    
+}
+
+
+.post-container{
+    display: flex;
+    background-color: lightblue ;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5%;
+    margin: 0.5% 0.5%;
+    box-shadow: 5px 10px;
+    font-size: 35px;
+}
+
+.csPosts-container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: azure;
+    padding: 2.5%;
+    
+}
+
+.csPost-container{
+    display: flex;
+    background-color: lightblue;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 2% 2%;
+    box-shadow: 5px 10px;
+}
+
+.caPosts-container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: azure;
+    padding: 5%;
+    
+}
+
+.caPost-container{
+    display: flex;
+    background-color: lightblue;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 3%;
+    margin: 2% 2%;
+    box-shadow: 5px 10px;
+}
+
+.cePosts-container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: white;
+    padding: 5%;
+    
+}
+
+.cePost-container{
+    display: flex;
+    background-color: lightblue;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 2% 2%;
+    box-shadow: 5px 10px;
+}
+
+.tcPosts-container{
+
+    display: grid;
+    grid-template-columns: repeat(3fr, 1fr);
+    gap:10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: white;
+    padding: 5%;
+    
+}
+
+.tcPost-container{
+    display: flex;
+    background-color: lightblue;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 2% 2%;
+    box-shadow: 5px 10px;
+}
+
+.heading, .csHeading ,.ceHeading, .caHeading, .tcHeading{
+    height:auto;
+    text-align: center;
+    display: flex;
+    color: black;
+    font-family:  Tahoma, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 50px;
+}
+.image{
+    width: 100%;
+    height: auto;
+    size: contain;
+}
+
+.csImage{
+    width: 100%;
+    height: auto;
+    size: contain;
+}
+
+.caImage{
+    width: 100%;
+    height: auto;
+    size: contain;
+}
+
+.ceImage{
+    width: 100%;
+    height: auto;
+    size: contain;
+}
+
+.tcImage{
+    width: 100%;
+    height: auto;
+    size: contain;
+}
+
+.main-container{
+    
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    height: 100%;
+    width: auto;
+
+    
+}
+/*
+.caPost-container{
+    size: contain;
+    perspective: 500px;
+    
+}
+
+.caPost-container:hover > .caCard{
+    cursor: pointer;
+    transform: rotateY(180deg) ;
+}
+
+.caCard{
+
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.caFront, .caBack{
+    backface-visibility: hidden;
+    font-size:20px;
+}
+
+
+.caFront {
+ 
+
+}
+
+.caBack {
+   
+    transform: rotateY(180deg) ;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
+@media only screen and (max-width: 1250px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+    header nav{
+        position: fixed;
+        top: 0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+       
+    }
+    header .responsive_nav{
+        transform: translateY(-100vh);
+        
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+.posts-container{
+    display:block;
+    width:auto;
+    margin-left: auto;
+    margin-right:auto;
+    height: 100%;
+    padding: 5%;
+}
+.post-container{
+    margin: 35px;
+}
+}
+   
+    
+
